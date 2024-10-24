@@ -6,33 +6,63 @@
 
 :root {
     --element-width: 100%;
+    --background: #181818;
+    --element: #111;
+    --element-hover: #121212;
+    --font-color: #fff;
 }
 
 body {
     width: 100%;
-    background-color: #181818;
+    background-color: var(--background);
 }
 
 header {
     width: 100%;
     height: 150px;
-    background-color: #181818;
+    background-color: var(--background);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 200px;
+    gap: 20px
 }
 
-header input {
-    width: 500px;
+button {
+    background: none;
+    border: none;
+}
+
+button:hover img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#add img, #color-toggle > * {
+    width: 40px;
+    height: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+header form {
+    width: 100%;
+    max-width: 600px;
+}
+
+header form input {
+    width: 100%;
     height: 50px;
     border: none;
     border-radius: 200px;
     border: 1px solid #5a5a5a;
-    background-color: #181818;
+    background-color: var(--background);
     outline: none;
     padding: 20px;
     font-size: 1rem;
-    color: #fff;
+    color: var(--font-color);
 }
 
 [type="search"]::-webkit-search-cancel-button {
@@ -51,9 +81,8 @@ main {
 
 .element {
     width: var(--element-width);
-    /* height: calc(var(--element-width) * 0.6); */
     aspect-ratio: 5 / 3;
-    background-color: #111;
+    background-color: var(--element);
     display: flex;
     padding: 20px;
     gap: 5px;
@@ -66,8 +95,7 @@ main {
 
 .element:hover {
     transform: translateY(-2px);
-    background-color: #121212;
-    /* box-shadow: 0 0 10px -5px #2c2c2c; */
+    background-color: var(--element-hover);
 }
 
 .element img {
@@ -77,5 +105,6 @@ main {
 }
 
 .element p {
-    color: #fff;
+    color: var(--font-color);
+    text-align: center;
 }

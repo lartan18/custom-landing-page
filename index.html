@@ -4,17 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Landing page</title>
 </head>
 <body>
     <header>
-
+        <button id="color-toggle">
+            <img src="images/light_mode.svg" alt="to light mode" class="" id="light-mode">
+            <img src="images/dark_mode.svg" alt="to dark mode" class="" id="dark-mode">
+        </button>
         <form action="https://google.com/search"><input type="search" name="q" id="search" autocomplete="off" autofocus></form>
+        <button id="add">
+            <img src="images/add-icon.svg" alt="">
+        </button>
     </header>
+    <div id="nice-to-know">
+        <h3 id="date"></h3>
+        <h3 id="week"></h3>
+
+    </div>
     <main>
         <a class="element" href="https://ntnu.blackboard.com/ultra/course">
             <img src="images/blackboard.ico" alt="">
             <p>Blackboard</p>
+        </a>
+        <a href="https://online.ntnu.no" class="element">
+            <img src="images/online-light.png" alt="">
         </a>
         <a class="element" href="https://geoguessr.com">
             <img src="images/geoguessr.svg" alt="">
@@ -26,11 +41,25 @@
             <img src="images/netflix.png" alt="">
         </a>
         <a class="element" href="https://youtube.com">
-            <img src="images/youtube.svg" alt="">
+            <img src="images/youtube-light.svg" alt="">
+        </a>
+        <a class="element" href="https://ukenr.no">
+            <p>Hvilken uke er det? (ukenr.no)</p>
+        </a>
+        <a href="https://drive.google.com/drive/u/3/home" class="element">
+            <img src="images/google-drive.png" alt="">
+        </a>
+        <a href="https://chatgpt.com" class="element">
+            <img src="images/chatgpt.png" alt="chatgpt">
+            <p>ChatGPT</p>
         </a>
         <a class="element" href="">
             <p>Placeholder</p>
-        </a>        
+        </a>
+        tv2play
+        viaplay
+        nrk
+                
     </main>
 </body>
 </html>
